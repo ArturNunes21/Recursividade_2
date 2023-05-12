@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soma dos primeiros N cubos:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_soma_recursivos">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_soma_recursivos">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calcular Recursivo</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_soma_recursivos">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>20</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soma dos primeiros N cubos:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_imprimir_decrescente">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_imprimir_decrescente">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>100</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_imprimir_decrescente">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calcular Recursivo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Insira os valores de um vetor:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_vetor">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>190</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Insira cada numero do vetor separado por um espaço, sem espaço após o último número</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_vetor">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>181</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encontrar menor numero</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>190</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>O menor número é:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_vetor">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>190</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Converter da base 10 para binária</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_converter_base">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_converter_base">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>310</y>
+      <width>141</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Converter Recursivo</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_converter_base">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>280</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
