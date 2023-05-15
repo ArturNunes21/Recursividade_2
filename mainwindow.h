@@ -24,6 +24,10 @@ private slots:
 
     void on_btn_converter_base_clicked();
 
+    void on_btn_exponente_clicked();
+
+    void on_btn_multiplicacao_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -36,18 +36,19 @@ int classeRecursiva::menorValor(QList<int> lista, int i, int menor){
     }
 }
 
-bool classeRecursiva::contemLetras(const QString& str) {
-    for (QChar c : str) {
-        if (c.isLetter()) {
-            return true;
-        }
+bool classeRecursiva::contemLetras(const QString& str, int i) {
+    if (i >= str.length()) {
+        return false;
+    } else if (str[i].isLetter()) {
+        return true;
+    } else {
+        return contemLetras(str, i+1);
     }
-    return false;
 }
 
 QString classeRecursiva::converterBase(int valor, QString res){
-    if(valor/2==1){  //fim das divisões
-        return res;
+    if(valor<2){  //fim das divisões
+        return res+="1";
     }
     if(valor%2==0){  //é divisível
         res+="0";
@@ -55,17 +56,43 @@ QString classeRecursiva::converterBase(int valor, QString res){
         res+="1";
     }
     return converterBase(valor/2, res);
+    //é melhor colocar o return dentro do if e do else?
 }
 
-QList<QString> classeRecursiva::inverterString(QString aux, QList<QString>& res){
-    static int i=0;
-    if(i==aux.length()){
-        return res;
+QString classeRecursiva::inverterString(QString str){
+    if (str.length() <= 1) {
+        return str;
     }else{
-        res.prepend(aux.at(i));
-        i+=1;
-        return inverterString(aux, res);
+        return inverterString(str.right(str.length() - 1)) + str.at(0);
+    }
+    //Esta função passa como parâmetro uma string sem o primeiro caracter
+    //até que a string posua tamanho <= a 1, assim, a string contendo
+    //apenas um caracter, recebe o primeiro caracter anterior a esta string
+    //antes de retira-lo, colocando ele ao final da string, criando um
+    //processo de inversão na volta da pilha de chamada
+}
+
+int classeRecursiva::exponencial(int base, int expoente, int i, int res){
+    if(base==0)
+        return 1;
+    if(i<expoente){
+        return exponencial(base, expoente, i+1, res*=base);
+    }else{
+        return res;
     }
 }
+
+int classeRecursiva::multiplica(int n1, int n2, int i, int res){
+    if(n1==1)
+        return n2;
+    if(n1==0 || n2==0)
+        return 0;
+    if(i<n2){
+        return multiplica(n1, n2, i+1, res+=n1);
+    }else{
+        return res;
+    }
+}
+
 
 }  //namespace
