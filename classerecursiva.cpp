@@ -46,16 +46,19 @@ bool classeRecursiva::contemLetras(const QString& str, int i) {
     }
 }
 
-QString classeRecursiva::converterBase(int valor, QString res){
+QString classeRecursiva::converterBase(int valor, QString res, int referencia){
     if(valor<2){  //fim das divisões
-        return res+="1";
+        res+="1";
+        if(referencia<=15)
+            res=verificarTamanho(res);
+        return res;
     }
     if(valor%2==0){  //é divisível
         res+="0";
     }else{  //não é divisível
         res+="1";
     }
-    return converterBase(valor/2, res);
+    return converterBase(valor/2, res, referencia);
     //é melhor colocar o return dentro do if e do else?
 }
 
@@ -70,6 +73,12 @@ QString classeRecursiva::inverterString(QString str){
     //apenas um caracter, recebe o primeiro caracter anterior a esta string
     //antes de retira-lo, colocando ele ao final da string, criando um
     //processo de inversão na volta da pilha de chamada
+}
+
+QString classeRecursiva::verificarTamanho(QString verificar){
+    if(verificar.length()<4)
+        return verificarTamanho(verificar+="0");
+    return verificar;
 }
 
 int classeRecursiva::exponencial(int base, int expoente, int i, int res){

@@ -11,10 +11,11 @@ public:
     QString imprimirDecrescente(int, QString);
     int menorValor(QList<int>, int, int);
     bool contemLetras(const QString&, int);
-    QString converterBase(int, QString);
+    QString converterBase(int, QString, int);
+    QString verificarTamanho(QString);
     QString inverterString(QString);
     int exponencial(int, int, int, int);
     int multiplica(int, int, int, int);
 };
-}; //namespace
+} //namespace
 #endif // CLASSERECURSIVA_H

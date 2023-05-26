@@ -28,6 +28,18 @@ private slots:
 
     void on_btn_multiplicacao_clicked();
 
+    void on_btn_somar_iterativo_clicked();
+
+    void on_btn_imprimir_descescente_iterativo_clicked();
+
+    void on_btn_vetor_iterativo_clicked();
+
+    void on_btn_converter_base_iterativo_clicked();
+
+    void on_btn_expoente_iterativo_clicked();
+
+    void on_btn_multiplicacao_iterativo_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
